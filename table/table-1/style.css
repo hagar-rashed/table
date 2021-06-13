@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(252, 249, 239);
+}
+h2{
+    font-size: 25px;
+    color: rgb(48, 4, 33);
+    padding-top: 50px;
+    position: relative;
+}
+h2::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 100px;
+    background-color:rgb(48, 4, 33) ;
+    transition: width 0.5s ;
+}
+h2:hover::after{
+    width: 150px;
+}
+table{
+    margin-top: 2%;
+    background-color: rgba(51, 7, 38, 0.315) !important;
+}
+
+table th{
+    color: rgb(116, 34, 72) !important;
+    cursor: pointer;
+}
+table th:hover{
+    background-color: rgba(138, 97, 124, 0.685);
+}
+table td{
+    font-size: 14px;
+    font-weight: 700;
+    padding: 18px 14px !important;
+    color: rgb(41, 16, 28) !important;
+}
